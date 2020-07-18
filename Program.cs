@@ -6,7 +6,7 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ed's Big Give Away!");
+            /*Console.WriteLine("Ed's Big Give Away!");
             Console.Write("Choose a door: 1, 2, 3: ");
             string userValue = Console.ReadLine();
 
@@ -24,6 +24,23 @@ namespace myApp
             }
 
             Console.WriteLine(message);
+            Console.ReadLine();*/
+
+
+            Console.WriteLine("Ed's Big Give Away!");
+            Console.Write("Choose a door: 1, 2, 3: ");
+            string userValue = Console.ReadLine();
+
+            string message = (userValue == "1") ? "boat" : "strand of lint";
+            
+            //Console.Write("You won a ");
+            //Console.Write(message);
+            //Console.Write(".");
+            //Console.ReadLine();
+
+            //Console.WriteLine("You won a {0}.", message);
+            Console.WriteLine("You entered: {0}, therefore you won a {1}.", userValue, message);
+
             Console.ReadLine();
 
         }
